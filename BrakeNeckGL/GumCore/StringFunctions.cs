@@ -215,10 +215,10 @@ namespace ToolsUtilities
             return true;
         }
 
-        //public static bool Contains<T>(this T[] values, T value)
-        //{
-        //    return Array.IndexOf(values, value) != -1;
-        //}
+        public static bool Contains<T>(this T[] values, T value)
+        {
+            return Array.IndexOf(values, value) != -1;
+        }
 
         public static string MakeStringUnique(string stringToMakeUnique, IEnumerable<string> strings)
         {

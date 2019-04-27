@@ -451,12 +451,18 @@
     <Compile Include="GumRuntimes\ColoredRectangleRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\ContainerRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\DeathComponentRuntime.cs" />
-    <Compile Include="GumRuntimes\DeathComponentRuntime.Generated.cs" />
+    <Compile Include="GumRuntimes\DeathComponentRuntime.Generated.cs">
+      <DependentUpon>DeathComponentRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\GameScreenGumRuntime.cs" />
-    <Compile Include="GumRuntimes\GameScreenGumRuntime.Generated.cs" />
+    <Compile Include="GumRuntimes\GameScreenGumRuntime.Generated.cs">
+      <DependentUpon>GameScreenGumRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\GumIdb.Generated.cs" />
     <Compile Include="GumRuntimes\MainMenuGumRuntime.cs" />
-    <Compile Include="GumRuntimes\MainMenuGumRuntime.Generated.cs" />
+    <Compile Include="GumRuntimes\MainMenuGumRuntime.Generated.cs">
+      <DependentUpon>MainMenuGumRuntime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GumRuntimes\NineSliceRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\RectangleRuntime.Generated.cs" />
     <Compile Include="GumRuntimes\SpriteRuntime.Generated.cs" />
