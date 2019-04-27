@@ -2558,6 +2558,10 @@
           <Name>AutoCreateGumScreens</Name>
           <ValueAsBool>true</ValueAsBool>
         </PropertySave>
+        <PropertySave>
+          <Name>FileAdditionBehavior</Name>
+          <ValueAsInt>1</ValueAsInt>
+        </PropertySave>
       </Properties>
       <Name>GumProject/GumProject.gumx</Name>
       <IsSharedStatic>true</IsSharedStatic>
