@@ -1,3 +1,5 @@
+# This FlatRedBall .gitignore file is being maintained in a GitHub Gist. If you find an issue or have any suggestions, please take them there.
+# https://gist.github.com/patridge/46a9e6f410499e47fdbfc6d81c7c92f0
 # FRB
 
 *.Generated.cs
@@ -33,8 +35,8 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
-x64/
-x86/
+#x64/ # FRB: commenting out to allow platform-specific DLLs at the root project level (https://gist.github.com/patridge/46a9e6f410499e47fdbfc6d81c7c92f0#gistcomment-2908389)
+#x86/ # FRB: commenting out to allow platform-specific DLLs at the root project level (https://gist.github.com/patridge/46a9e6f410499e47fdbfc6d81c7c92f0#gistcomment-2908389)
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
