@@ -6,6 +6,7 @@
         public class CameraSetupData
         {
             public float Scale { get; set; }
+            public float ScaleGum { get; set; }
             public bool Is2D { get; set; }
             public int ResolutionWidth { get; set; }
             public int ResolutionHeight { get; set; }
@@ -13,6 +14,7 @@
             public bool AllowWidowResizing { get; set; }
             public bool IsFullScreen { get; set; }
             public ResizeBehavior ResizeBehavior { get; set; }
+            public ResizeBehavior ResizeBehaviorGum { get; set; }
             public WidthOrHeight DominantInternalCoordinates { get; set; }
         }
         public enum ResizeBehavior
@@ -38,6 +40,8 @@
                 IsFullScreen = false,
                 AllowWidowResizing = true,
                 ResizeBehavior = ResizeBehavior.StretchVisibleArea,
+                ScaleGum = 100f,
+                ResizeBehaviorGum = ResizeBehavior.StretchVisibleArea,
                 DominantInternalCoordinates = WidthOrHeight.Height,
             }
             ;
@@ -54,6 +58,10 @@
                     cameraToReset.OrthogonalWidth = Data.ResolutionWidth;
                     cameraToReset.FixAspectRatioYConstant();
                 }
+                else
+                {
+                    cameraToReset.UsePixelCoordinates3D(0);
+                }
                 if (Data.AspectRatio != null)
                 {
                     SetAspectRatioTo(Data.AspectRatio.Value, Data.DominantInternalCoordinates, Data.ResolutionWidth, Data.ResolutionHeight);
@@ -64,6 +72,7 @@
                 CameraSetup.graphicsDeviceManager = graphicsDeviceManager;
                 ResetWindow();
                 ResetCamera(cameraToSetUp);
+                ResetGumResolutionValues();
                 FlatRedBall.FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged += HandleResolutionChange;
             }
             internal static void ResetWindow () 
@@ -120,6 +129,62 @@
                     FlatRedBall.Camera.Main.OrthogonalHeight = FlatRedBall.Camera.Main.DestinationRectangle.Height / (Data.Scale/ 100.0f);
                     FlatRedBall.Camera.Main.FixAspectRatioYConstant();
                 }
+                ResetGumResolutionValues();
+            }
+            public static void ResetGumResolutionValues () 
+            {
+                if (Data.ResizeBehaviorGum == ResizeBehavior.IncreaseVisibleArea)
+                {
+                    global::RenderingLibrary.SystemManagers.Default.Renderer.Camera.Zoom = Data.Scale/100.0f;
+                    Gum.Wireframe.GraphicalUiElement.CanvasWidth = Gum.Managers.ObjectFinder.Self.GumProjectSave.DefaultCanvasWidth;
+                    Gum.Wireframe.GraphicalUiElement.CanvasHeight = Gum.Managers.ObjectFinder.Self.GumProjectSave.DefaultCanvasHeight; 
+                }
+                else
+                {
+                    Gum.Wireframe.GraphicalUiElement.CanvasWidth = Data.ResolutionWidth / (Data.ScaleGum/100.0f);
+                    Gum.Wireframe.GraphicalUiElement.CanvasHeight = Data.ResolutionHeight / (Data.ScaleGum/100.0f);
+                    if (Data.AspectRatio != null)
+                    {
+                        
+
+                    var resolutionAspectRatio = FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionWidth / (decimal)FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionHeight;
+                    int destinationRectangleWidth;
+                    int destinationRectangleHeight;
+                    int x = 0;
+                    int y = 0;
+                    if (Data.AspectRatio.Value > resolutionAspectRatio)
+                    {
+                        destinationRectangleWidth = FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionWidth;
+                        destinationRectangleHeight = FlatRedBall.Math.MathFunctions.RoundToInt(destinationRectangleWidth / (float)Data.AspectRatio.Value);
+                    }
+                    else
+                    {
+                        destinationRectangleHeight = FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionHeight;
+                        destinationRectangleWidth = FlatRedBall.Math.MathFunctions.RoundToInt(destinationRectangleHeight * (float)Data.AspectRatio.Value);
+                    }
+
+                    var canvasHeight = Gum.Wireframe.GraphicalUiElement.CanvasHeight;
+                    var zoom = (float)destinationRectangleHeight / (float)Gum.Wireframe.GraphicalUiElement.CanvasHeight;
+                    if(global::RenderingLibrary.SystemManagers.Default != null)
+                    {
+                        global::RenderingLibrary.SystemManagers.Default.Renderer.Camera.Zoom = zoom;
+                    }
+                    
+
+                    }
+                    else
+                    {
+                        
+                    var graphicsHeight = Gum.Wireframe.GraphicalUiElement.CanvasHeight;
+                    var windowHeight = FlatRedBall.Camera.Main.DestinationRectangle.Height;
+                    var zoom = windowHeight / (float)graphicsHeight;
+                    if(global::RenderingLibrary.SystemManagers.Default != null)
+                    {
+                        global::RenderingLibrary.SystemManagers.Default.Renderer.Camera.Zoom = zoom;
+                    }
+                    
+                    }
+                }
             }
             private static void SetAspectRatioTo (decimal aspectRatio, WidthOrHeight dominantInternalCoordinates, int desiredWidth, int desiredHeight) 
             {
@@ -140,17 +205,115 @@
                     destinationRectangleWidth = FlatRedBall.Math.MathFunctions.RoundToInt(destinationRectangleHeight * (float)aspectRatio);
                     x = (FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionWidth - destinationRectangleWidth) / 2;
                 }
-                FlatRedBall.Camera.Main.DestinationRectangle = new Microsoft.Xna.Framework.Rectangle(x, y, destinationRectangleWidth, destinationRectangleHeight);
-                if (dominantInternalCoordinates == WidthOrHeight.Height)
+                foreach (var camera in FlatRedBall.SpriteManager.Cameras)
                 {
-                    FlatRedBall.Camera.Main.OrthogonalHeight = desiredHeight;
-                    FlatRedBall.Camera.Main.FixAspectRatioYConstant();
-                }
-                else
-                {
-                    FlatRedBall.Camera.Main.OrthogonalWidth = desiredWidth;
-                    FlatRedBall.Camera.Main.FixAspectRatioXConstant();
+                    int currentX = x;
+                    int currentY = y;
+                    int currentWidth = destinationRectangleWidth;
+                    int currentHeight = destinationRectangleHeight;
+                    switch(camera.CurrentSplitScreenViewport)
+                    {
+                        case  Camera.SplitScreenViewport.TopLeft:
+                            currentWidth /= 2;
+                            currentHeight /= 2;
+                            break;
+                        case  Camera.SplitScreenViewport.TopRight:
+                            currentX = x + destinationRectangleWidth / 2;
+                            currentWidth /= 2;
+                            currentHeight /= 2;
+                            break;
+                        case  Camera.SplitScreenViewport.BottomLeft:
+                            currentY = y + destinationRectangleHeight / 2;
+                            currentWidth /= 2;
+                            currentHeight /= 2;
+                            break;
+                        case  Camera.SplitScreenViewport.BottomRight:
+                            currentX = x + destinationRectangleWidth / 2;
+                            currentY = y + destinationRectangleHeight / 2;
+                            currentWidth /= 2;
+                            currentHeight /= 2;
+                            break;
+                        case  Camera.SplitScreenViewport.TopHalf:
+                            currentHeight /= 2;
+                            break;
+                        case  Camera.SplitScreenViewport.BottomHalf:
+                            currentY = y + destinationRectangleHeight / 2;
+                            currentHeight /= 2;
+                            break;
+                        case  Camera.SplitScreenViewport.LeftHalf:
+                            currentWidth /= 2;
+                            break;
+                        case  Camera.SplitScreenViewport.RightHalf:
+                            currentX = x + destinationRectangleWidth / 2;
+                            currentWidth /= 2;
+                            break;
+                    }
+                    camera.DestinationRectangle = new Microsoft.Xna.Framework.Rectangle(currentX, currentY, currentWidth, currentHeight);
+                    if (dominantInternalCoordinates == WidthOrHeight.Height)
+                    {
+                        camera.OrthogonalHeight = desiredHeight;
+                        camera.FixAspectRatioYConstant();
+                    }
+                    else
+                    {
+                        camera.OrthogonalWidth = desiredWidth;
+                        camera.FixAspectRatioXConstant();
+                    }
                 }
             }
+            
+#if WINDOWS
+            internal static readonly System.IntPtr HWND_TOPMOST = new System.IntPtr(-1);
+            internal static readonly System.IntPtr HWND_NOTOPMOST = new System.IntPtr(-2);
+            internal static readonly System.IntPtr HWND_TOP = new System.IntPtr(0);
+            internal static readonly System.IntPtr HWND_BOTTOM = new System.IntPtr(1);
+    
+            [System.Flags]
+            internal enum SetWindowPosFlags : uint
+            {
+                IgnoreMove = 0x0002,
+                IgnoreResize = 0x0001,
+            }
+    
+            [System.Runtime.InteropServices.DllImport("user32.dll", SetLastError = true)]
+            internal static extern bool SetWindowPos(System.IntPtr hWnd, System.IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, SetWindowPosFlags uFlags);
+
+        public static void SetWindowAlwaysOnTop()
+        {
+            var hWnd = FlatRedBall.FlatRedBallServices.Game.Window.Handle;
+            SetWindowPos(
+                hWnd,
+                HWND_TOPMOST,
+                0, 0,
+                0, 0, //FlatRedBallServices.GraphicsOptions.ResolutionWidth, FlatRedBallServices.GraphicsOptions.ResolutionHeight,
+                SetWindowPosFlags.IgnoreMove | SetWindowPosFlags.IgnoreResize
+            );
+        }
+
+        public static void UnsetWindowAlwaysOnTop()
+        {
+            var hWnd = FlatRedBall.FlatRedBallServices.Game.Window.Handle;
+
+            SetWindowPos(
+                hWnd,
+                HWND_NOTOPMOST,
+                0, 0,
+                0, 0, //FlatRedBallServices.GraphicsOptions.ResolutionWidth, FlatRedBallServices.GraphicsOptions.ResolutionHeight,
+                SetWindowPosFlags.IgnoreMove | SetWindowPosFlags.IgnoreResize
+            );
+        }
+#else
+        public static void SetWindowAlwaysOnTop()
+            {
+                // not supported on this platform, do nothing
+            }
+
+            public static void UnsetWindowAlwaysOnTop()
+            {
+                // not supported on this platform, do nothings
+            }
+
+#endif
+
         }
     }
