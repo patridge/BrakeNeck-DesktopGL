@@ -25,6 +25,12 @@
       </ReferencedFiles>
       <NamedObjects>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\PlayerBuggy</SourceClassGenericType>
@@ -43,6 +49,12 @@
                 <Member>Z</Member>
                 <ValueAsFloat>1</ValueAsFloat>
               </CustomProperty>
+              <Properties>
+                <PropertySave>
+                  <Name>SourceType</Name>
+                  <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+                </PropertySave>
+              </Properties>
               <SourceType>Entity</SourceType>
               <SourceClassType>Entities\PlayerBuggy</SourceClassType>
               <InstanceName>PlayerBuggyInstance</InstanceName>
@@ -54,6 +66,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\Obstacle</SourceClassGenericType>
@@ -63,6 +81,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\PlayerBullet</SourceClassGenericType>
@@ -82,6 +106,12 @@
             <Member>Z</Member>
             <ValueAsFloat>3</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStorm</SourceClassType>
           <InstanceName>SandStormInstance</InstanceName>
@@ -100,6 +130,12 @@
             <Member>Z</Member>
             <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\ObstacleSpawner</SourceClassType>
           <InstanceName>ObstacleSpawnerInstance</InstanceName>
@@ -109,6 +145,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\Particles\MissileDestructionParticles</SourceClassGenericType>
@@ -123,6 +165,12 @@
             <Member>Y</Member>
             <ValueAsFloat>600</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\GroundDecorationSpawner</SourceClassType>
           <InstanceName>GroundDecorationSpawnerInstance</InstanceName>
@@ -132,6 +180,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\CameraController</SourceClassType>
           <InstanceName>CameraControllerInstance</InstanceName>
@@ -140,6 +194,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/GameScreenGum.gusx</SourceFile>
           <SourceName>ScoreText (BrakeNeck.GumRuntimes.TextRuntime)</SourceName>
@@ -149,6 +209,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/GameScreenGum.gusx</SourceFile>
           <SourceName>MultiplierText (BrakeNeck.GumRuntimes.TextRuntime)</SourceName>
@@ -158,6 +224,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/GameScreenGum.gusx</SourceFile>
           <SourceName>TimeText (BrakeNeck.GumRuntimes.TextRuntime)</SourceName>
@@ -167,6 +239,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/GameScreenGum.gusx</SourceFile>
           <SourceName>DebugText (BrakeNeck.GumRuntimes.TextRuntime)</SourceName>
@@ -176,6 +254,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/GameScreenGum.gusx</SourceFile>
           <SourceName>DeathComponentInstance (BrakeNeck.GumRuntimes.DeathComponentRuntime)</SourceName>
@@ -185,6 +269,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>Entities\Particles\CrateDestructionParticles</SourceClassGenericType>
@@ -209,6 +299,12 @@
             <Member>Height</Member>
             <ValueAsFloat>2000</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -236,6 +332,12 @@
             <Member>Height</Member>
             <ValueAsFloat>2000</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -271,6 +373,12 @@
       </ReferencedFiles>
       <NamedObjects>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/MainMenuGum.gusx</SourceFile>
           <SourceName>this (BrakeNeck.GumRuntimes.MainMenuGumRuntime)</SourceName>
@@ -280,6 +388,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/MainMenuGum.gusx</SourceFile>
           <SourceName>PlayerSelectionContainer (BrakeNeck.GumRuntimes.ColoredRectangleRuntime)</SourceName>
@@ -289,6 +403,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>GumProject/Screens/MainMenuGum.gusx</SourceFile>
           <SourceName>SelectionMarker (BrakeNeck.GumRuntimes.ColoredRectangleRuntime)</SourceName>
@@ -345,6 +465,12 @@
       <Name>Entities\CameraController</Name>
       <NamedObjects>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -477,6 +603,12 @@
             <Member>TextureScale</Member>
             <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -531,6 +663,12 @@
       <Name>Entities\GroundDecorationSpawner</Name>
       <NamedObjects>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -553,16 +691,16 @@
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
       <Properties>
         <PropertySave>
           <Name>ImplementsICollidable</Name>
           <ValueAsBool>true</ValueAsBool>
         </PropertySave>
       </Properties>
-      <Tags>
-        <string>GLUE</string>
-      </Tags>
-      <Source>GLUE</Source>
       <StateCategoryList>
         <StateSaveCategory>
           <States>
@@ -691,6 +829,12 @@
             <Member>Blue</Member>
             <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -716,6 +860,12 @@
             <Member>Visible</Member>
             <ValueAsBool>false</ValueAsBool>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -762,6 +912,12 @@
             <Member>Alpha</Member>
             <ValueAsFloat>0.4</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -883,6 +1039,12 @@
             <Member>Radius</Member>
             <ValueAsFloat>16</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -929,6 +1091,12 @@
       <Name>Entities\Particles\CrateDestructionParticles</Name>
       <NamedObjects>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -940,6 +1108,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceClassType>PositionedObjectList&lt;T&gt;</SourceClassType>
           <SourceClassGenericType>FlatRedBall.Sprite</SourceClassGenericType>
@@ -1025,6 +1199,12 @@
       <Name>Entities\Particles\MissileDestructionParticles</Name>
       <NamedObjects>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1101,6 +1281,12 @@
       <Name>Entities\Particles\MissileEmitter</Name>
       <NamedObjects>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1123,16 +1309,16 @@
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
       <Properties>
         <PropertySave>
           <Name>ImplementsICollidable</Name>
           <ValueAsBool>true</ValueAsBool>
         </PropertySave>
       </Properties>
-      <Tags>
-        <string>GLUE</string>
-      </Tags>
-      <Source>GLUE</Source>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1258,6 +1444,12 @@
             <Member>CurrentChainName</Member>
             <ValueAsString>TruckAnimation</ValueAsString>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1298,6 +1490,12 @@
               </Vector2>
             </ValueAsListOfVector2>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1329,6 +1527,12 @@
             <Member>RotationZ</Member>
             <ValueAsFloat>0</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Turret</SourceClassType>
           <InstanceName>TurretInstance</InstanceName>
@@ -1347,6 +1551,12 @@
             <Member>Y</Member>
             <ValueAsFloat>30</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Tire</SourceClassType>
           <InstanceName>FrontLeftTire</InstanceName>
@@ -1370,6 +1580,12 @@
             <Member>FlipVertical</Member>
             <ValueAsBool>true</ValueAsBool>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Tire</SourceClassType>
           <InstanceName>FrontRightTire</InstanceName>
@@ -1388,6 +1604,12 @@
             <Member>Y</Member>
             <ValueAsFloat>30</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Tire</SourceClassType>
           <InstanceName>BackLeftTire</InstanceName>
@@ -1411,6 +1633,12 @@
             <Member>FlipVertical</Member>
             <ValueAsBool>true</ValueAsBool>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Tire</SourceClassType>
           <InstanceName>BackRightTire</InstanceName>
@@ -1459,6 +1687,12 @@
             <Member>ParentRotationChangesPosition</Member>
             <ValueAsBool>false</ValueAsBool>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1487,16 +1721,16 @@
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
       <Properties>
         <PropertySave>
           <Name>ImplementsICollidable</Name>
           <ValueAsBool>true</ValueAsBool>
         </PropertySave>
       </Properties>
-      <Tags>
-        <string>GLUE</string>
-      </Tags>
-      <Source>GLUE</Source>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1558,6 +1792,12 @@
             <Member>CurrentChainName</Member>
             <ValueAsString>Main</ValueAsString>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1578,6 +1818,12 @@
             <Member>Visible</Member>
             <ValueAsBool>false</ValueAsBool>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1589,6 +1835,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\Particles\MissileEmitter</SourceClassType>
           <InstanceName>MissileEmitterInstance</InstanceName>
@@ -1609,16 +1861,16 @@
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
       <Properties>
         <PropertySave>
           <Name>ImplementsICollidable</Name>
           <ValueAsBool>true</ValueAsBool>
         </PropertySave>
       </Properties>
-      <Tags>
-        <string>GLUE</string>
-      </Tags>
-      <Source>GLUE</Source>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1702,6 +1954,12 @@
             <Member>Color</Member>
             <ValueAsString>Red</ValueAsString>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1753,6 +2011,12 @@
             <Member>CurrentChainName</Member>
             <ValueAsString>SandstormMask</ValueAsString>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -1768,6 +2032,12 @@
             <Member>X</Member>
             <ValueAsFloat>900</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance</InstanceName>
@@ -1781,6 +2051,12 @@
             <Member>X</Member>
             <ValueAsFloat>700</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance10</InstanceName>
@@ -1794,6 +2070,12 @@
             <Member>X</Member>
             <ValueAsFloat>500</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance9</InstanceName>
@@ -1807,6 +2089,12 @@
             <Member>X</Member>
             <ValueAsFloat>300</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance8</InstanceName>
@@ -1820,6 +2108,12 @@
             <Member>X</Member>
             <ValueAsFloat>100</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance7</InstanceName>
@@ -1833,6 +2127,12 @@
             <Member>X</Member>
             <ValueAsFloat>-100</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance6</InstanceName>
@@ -1846,6 +2146,12 @@
             <Member>X</Member>
             <ValueAsFloat>-300</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance5</InstanceName>
@@ -1859,6 +2165,12 @@
             <Member>X</Member>
             <ValueAsFloat>-500</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance4</InstanceName>
@@ -1872,6 +2184,12 @@
             <Member>X</Member>
             <ValueAsFloat>-700</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance3</InstanceName>
@@ -1885,6 +2203,12 @@
             <Member>X</Member>
             <ValueAsFloat>-900</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">Entity</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>Entity</SourceType>
           <SourceClassType>Entities\SandStormEffect</SourceClassType>
           <InstanceName>SandStormEffectInstance2</InstanceName>
@@ -2001,6 +2325,12 @@
             <Member>Alpha</Member>
             <ValueAsFloat>0.7</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2051,6 +2381,12 @@
             <Member>RotationZ</Member>
             <ValueAsFloat>0.5</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2101,6 +2437,12 @@
             <Member>RotationZ</Member>
             <ValueAsFloat>0</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2151,6 +2493,12 @@
             <Member>RotationZ</Member>
             <ValueAsFloat>0.7</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2196,6 +2544,12 @@
             <Member>Alpha</Member>
             <ValueAsFloat>0.9</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2336,6 +2690,12 @@
             <Member>IgnoreAnimationChainTextureFlip</Member>
             <ValueAsBool>true</ValueAsBool>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2346,6 +2706,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>Entities/PlayerBuggy/AnimationChainListFile.achx</SourceFile>
           <SourceName>TreadLeft (AnimationChain)</SourceName>
@@ -2355,6 +2721,12 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">File</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>File</SourceType>
           <SourceFile>Entities/PlayerBuggy/AnimationChainListFile.achx</SourceFile>
           <SourceName>TreadRight (AnimationChain)</SourceName>
@@ -2484,6 +2856,12 @@
             <Member>RotationZ</Member>
             <ValueAsFloat>0</ValueAsFloat>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2539,6 +2917,12 @@
             <Member>ParentRotationChangesPosition</Member>
             <ValueAsBool>false</ValueAsBool>
           </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
           <SourceType>FlatRedBallType</SourceType>
           <SourceFile />
           <SourceName />
@@ -2624,7 +3008,7 @@
           <Member>Name</Member>
         </InstructionSave>
         <InstructionSave>
-          <Type>System.Collections.Generic.List&lt;FlatRedBall.Content.AnimationChain.AnimationFrameSaveBase&gt;</Type>
+          <Type>System.Collections.Generic.List&lt;FlatRedBall.Content.AnimationChain.AnimationFrameSave&gt;</Type>
           <Member>EmbeddedAnimation</Member>
         </InstructionSave>
       </RequiredProperties>
@@ -2635,6 +3019,7 @@
   <TranslatedFiles />
   <ApplyToFixedResolutionPlatforms>false</ApplyToFixedResolutionPlatforms>
   <ExternallyBuiltFileDirectory>../../</ExternallyBuiltFileDirectory>
+  <FileVersion>0</FileVersion>
   <PluginData>
     <RequiredPlugins>
       <PluginRequirement>
@@ -2657,7 +3042,9 @@
     <RunInFullScreen>false</RunInFullScreen>
     <AllowWindowResizing>true</AllowWindowResizing>
     <Scale>60</Scale>
+    <ScaleGum>100</ScaleGum>
     <ResizeBehavior>StretchVisibleArea</ResizeBehavior>
+    <ResizeBehaviorGum>StretchVisibleArea</ResizeBehaviorGum>
     <DominantInternalCoordinates>Height</DominantInternalCoordinates>
   </DisplaySettings>
 </GlueProjectSave>

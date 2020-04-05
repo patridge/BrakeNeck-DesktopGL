@@ -54,9 +54,9 @@ namespace BrakeNeck
         
             FlatRedBallServices.InitializeFlatRedBall(this, graphics);
 
-			GlobalContent.Initialize();
+            GlobalContent.Initialize();
 			CameraSetup.SetupCamera(SpriteManager.Camera, graphics);
-			FlatRedBall.Screens.ScreenManager.Start(typeof(BrakeNeck.Screens.MainMenu));
+            FlatRedBall.Screens.ScreenManager.Start(typeof(BrakeNeck.Screens.MainMenu));
 
             base.Initialize();
         }

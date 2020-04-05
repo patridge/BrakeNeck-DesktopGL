@@ -119,36 +119,13 @@ namespace TMXGlueLib
                 }
             }
         }
-
-        private int? visibleField;
-        [XmlAttribute("visible")]
-        public int visible
-        {
-            get
-            {
-                return this.visibleField.HasValue ? this.visibleField.Value : 1;
-            }
-            set
-            {
-                this.visibleField = value;
-            }
-        }
-
+        
         [XmlAttribute("opacity")]
         public float Opacity
         {
             get; set;
-        }
-
-        [XmlIgnore]
-        public bool IsVisible
-        {
-            get
-            {
-                return visible != 0;
-            }
-        }
-
+        } = 1.0f;
+        
         [XmlIgnore]
         public TiledMapSave.LayerVisibleBehavior VisibleBehavior = TiledMapSave.LayerVisibleBehavior.Ignore;
 
