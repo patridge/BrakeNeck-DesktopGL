@@ -16,6 +16,7 @@
             public ResizeBehavior ResizeBehavior { get; set; }
             public ResizeBehavior ResizeBehaviorGum { get; set; }
             public WidthOrHeight DominantInternalCoordinates { get; set; }
+            public Microsoft.Xna.Framework.Graphics.TextureFilter TextureFilter { get; set; }
         }
         public enum ResizeBehavior
         {
@@ -39,6 +40,7 @@
                 AspectRatio = 1.7777777777777777777777777778m,
                 IsFullScreen = false,
                 AllowWidowResizing = true,
+                TextureFilter = Microsoft.Xna.Framework.Graphics.TextureFilter.Linear,
                 ResizeBehavior = ResizeBehavior.StretchVisibleArea,
                 ScaleGum = 100f,
                 ResizeBehaviorGum = ResizeBehavior.StretchVisibleArea,
@@ -61,6 +63,8 @@
                 else
                 {
                     cameraToReset.UsePixelCoordinates3D(0);
+                    var zoom = cameraToReset.DestinationRectangle.Height / (float)Data.ResolutionHeight;
+                    cameraToReset.Z /= zoom; 
                 }
                 if (Data.AspectRatio != null)
                 {
@@ -70,6 +74,7 @@
             internal static void SetupCamera (Camera cameraToSetUp, Microsoft.Xna.Framework.GraphicsDeviceManager graphicsDeviceManager) 
             {
                 CameraSetup.graphicsDeviceManager = graphicsDeviceManager;
+                FlatRedBall.FlatRedBallServices.GraphicsOptions.TextureFilter = Data.TextureFilter;
                 ResetWindow();
                 ResetCamera(cameraToSetUp);
                 ResetGumResolutionValues();
@@ -83,6 +88,7 @@
                 {
                     #if DESKTOP_GL
                     graphicsDeviceManager.HardwareModeSwitch = false;
+                    FlatRedBall.FlatRedBallServices.Game.Window.Position = new Microsoft.Xna.Framework.Point(0,0);
                     FlatRedBall.FlatRedBallServices.GraphicsOptions.SetResolution(Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width, Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height, FlatRedBall.Graphics.WindowedFullscreenMode.FullscreenBorderless);
                     #elif WINDOWS
                     System.IntPtr hWnd = FlatRedBall.FlatRedBallServices.Game.Window.Handle;
@@ -101,6 +107,10 @@
                     var maxHeight = Microsoft.Xna.Framework.Graphics.GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height - 28;
                     width = System.Math.Min(width, maxWidth);
                     height = System.Math.Min(height, maxHeight);
+                    if (FlatRedBall.FlatRedBallServices.Game.Window.Position.Y < 25)
+                    {
+                        FlatRedBall.FlatRedBallServices.Game.Window.Position = new Microsoft.Xna.Framework.Point(FlatRedBall.FlatRedBallServices.Game.Window.Position.X, 25);
+                    }
                     FlatRedBall.FlatRedBallServices.GraphicsOptions.SetResolution(width, height);
                 }
                 #elif IOS || ANDROID
@@ -141,12 +151,12 @@
                 }
                 else
                 {
-                    Gum.Wireframe.GraphicalUiElement.CanvasWidth = Data.ResolutionWidth / (Data.ScaleGum/100.0f);
                     Gum.Wireframe.GraphicalUiElement.CanvasHeight = Data.ResolutionHeight / (Data.ScaleGum/100.0f);
                     if (Data.AspectRatio != null)
                     {
                         
 
+                    Gum.Wireframe.GraphicalUiElement.CanvasWidth = Data.ResolutionWidth / (Data.ScaleGum/100.0f);
                     var resolutionAspectRatio = FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionWidth / (decimal)FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionHeight;
                     int destinationRectangleWidth;
                     int destinationRectangleHeight;
@@ -168,6 +178,14 @@
                     if(global::RenderingLibrary.SystemManagers.Default != null)
                     {
                         global::RenderingLibrary.SystemManagers.Default.Renderer.Camera.Zoom = zoom;
+
+                        foreach(var layer in global::RenderingLibrary.SystemManagers.Default.Renderer.Layers)
+                        {
+                            if(layer.LayerCameraSettings != null)
+                            {
+                                layer.LayerCameraSettings.Zoom = zoom;
+                            }
+                        }
                     }
                     
 
@@ -175,12 +193,27 @@
                     else
                     {
                         
+
+                    // since a fixed aspect ratio isn't specified, adjust the width according to the 
+                    // current game aspect ratio and the canvas height
+                    var currentAspectRatio = FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionWidth / (float)
+                        FlatRedBall.FlatRedBallServices.GraphicsOptions.ResolutionHeight;
+                    Gum.Wireframe.GraphicalUiElement.CanvasWidth =
+                        Gum.Wireframe.GraphicalUiElement.CanvasHeight * currentAspectRatio;
+
                     var graphicsHeight = Gum.Wireframe.GraphicalUiElement.CanvasHeight;
                     var windowHeight = FlatRedBall.Camera.Main.DestinationRectangle.Height;
                     var zoom = windowHeight / (float)graphicsHeight;
                     if(global::RenderingLibrary.SystemManagers.Default != null)
                     {
                         global::RenderingLibrary.SystemManagers.Default.Renderer.Camera.Zoom = zoom;
+                        foreach(var layer in global::RenderingLibrary.SystemManagers.Default.Renderer.Layers)
+                        {
+                            if(layer.LayerCameraSettings != null)
+                            {
+                                layer.LayerCameraSettings.Zoom = zoom;
+                            }
+                        }
                     }
                     
                     }

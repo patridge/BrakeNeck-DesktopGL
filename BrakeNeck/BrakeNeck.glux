@@ -14,15 +14,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
-      <Name>Screens\GameScreen</Name>
+      <UseGlobalContent>false</UseGlobalContent>
       <ReferencedFiles>
         <ReferencedFileSave>
           <Name>GumProject/Screens/GameScreenGum.gusx</Name>
           <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Gum.GumIdb</RuntimeType>
+          <RuntimeType>BrakeNeck.GumRuntimes.GameScreenGumRuntime</RuntimeType>
           <ProjectsToExcludeFrom />
         </ReferencedFileSave>
       </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <NamedObjects>
         <NamedObjectSave>
           <Properties>
@@ -286,8 +287,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>-1010</ValueAsFloat>
+            <Member>Height</Member>
+            <ValueAsFloat>2000</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
@@ -296,8 +297,8 @@
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Height</Member>
-            <ValueAsFloat>2000</ValueAsFloat>
+            <Member>X</Member>
+            <ValueAsFloat>-1010</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -319,8 +320,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>1010</ValueAsFloat>
+            <Member>Height</Member>
+            <ValueAsFloat>2000</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
@@ -329,8 +330,8 @@
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Height</Member>
-            <ValueAsFloat>2000</ValueAsFloat>
+            <Member>X</Member>
+            <ValueAsFloat>1010</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -350,18 +351,19 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
+      <Name>Screens\GameScreen</Name>
     </ScreenSave>
     <ScreenSave>
       <Tags>
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
-      <Name>Screens\MainMenu</Name>
+      <UseGlobalContent>false</UseGlobalContent>
       <ReferencedFiles>
         <ReferencedFileSave>
           <Name>GumProject/Screens/MainMenuGum.gusx</Name>
           <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Gum.GumIdb</RuntimeType>
+          <RuntimeType>BrakeNeck.GumRuntimes.MainMenuGumRuntime</RuntimeType>
           <ProjectsToExcludeFrom />
         </ReferencedFileSave>
         <ReferencedFileSave>
@@ -371,6 +373,7 @@
           <ProjectsToExcludeFrom />
         </ReferencedFileSave>
       </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <NamedObjects>
         <NamedObjectSave>
           <Properties>
@@ -418,6 +421,7 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
+      <Name>Screens\MainMenu</Name>
     </ScreenSave>
   </Screens>
   <Entities>
@@ -426,6 +430,8 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -435,7 +441,6 @@
             </PropertySave>
           </Properties>
           <Name>MaxShakeIntensity</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">24</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -446,7 +451,6 @@
             </PropertySave>
           </Properties>
           <Name>NoShakeDistance</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">790</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -457,12 +461,9 @@
             </PropertySave>
           </Properties>
           <Name>FullShakeDistance</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">200</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\CameraController</Name>
       <NamedObjects>
         <NamedObjectSave>
           <Properties>
@@ -481,6 +482,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
+      <Name>Entities\CameraController</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -488,6 +491,8 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -497,7 +502,6 @@
             </PropertySave>
           </Properties>
           <Name>ShowPath</Name>
-          <Type>bool</Type>
           <DefaultValue xsi:type="xsd:boolean">false</DefaultValue>
           <IsShared>true</IsShared>
         </CustomVariable>
@@ -509,7 +513,6 @@
             </PropertySave>
           </Properties>
           <Name>MakePlayerInvincible</Name>
-          <Type>bool</Type>
           <DefaultValue xsi:type="xsd:boolean">false</DefaultValue>
           <IsShared>true</IsShared>
         </CustomVariable>
@@ -521,7 +524,6 @@
             </PropertySave>
           </Properties>
           <Name>DisableCameraShake</Name>
-          <Type>bool</Type>
           <DefaultValue xsi:type="xsd:boolean">false</DefaultValue>
           <IsShared>true</IsShared>
         </CustomVariable>
@@ -533,13 +535,12 @@
             </PropertySave>
           </Properties>
           <Name>ShowSpawningInfo</Name>
-          <Type>bool</Type>
           <DefaultValue xsi:type="xsd:boolean">false</DefaultValue>
           <IsShared>true</IsShared>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\DebuggingVariables</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -547,6 +548,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>black_metal_96.fnt</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.BitmapFont</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -556,7 +567,6 @@
             </PropertySave>
           </Properties>
           <Name>X</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -566,7 +576,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -576,11 +585,8 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\GameText</Name>
       <NamedObjects>
         <NamedObjectSave>
           <CustomProperty>
@@ -619,14 +625,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>black_metal_96.fnt</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.BitmapFont</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\GameText</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -634,6 +634,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/GroundDecorationSpawner/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -643,7 +653,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -653,14 +662,10 @@
             </PropertySave>
           </Properties>
           <Name>YDistanceBetweenSpawns</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">15</DefaultValue>
           <DefinedByBase>true</DefinedByBase>
         </CustomVariable>
       </CustomVariables>
-      <BaseEntity>Entities\SpawnerBase</BaseEntity>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\GroundDecorationSpawner</Name>
       <NamedObjects>
         <NamedObjectSave>
           <Properties>
@@ -680,14 +685,9 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/GroundDecorationSpawner/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\GroundDecorationSpawner</Name>
+      <BaseEntity>Entities\SpawnerBase</BaseEntity>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -695,12 +695,219 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/Obstacle/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+        <ReferencedFileSave>
+          <Name>Entities/Obstacle/BonusAnimationChains.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
+      <CustomVariables>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>X</Name>
+        </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>Y</Name>
+        </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>float</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>Z</Name>
+        </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>int</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>Health</Name>
+          <DefaultValue xsi:type="xsd:int">3</DefaultValue>
+        </CustomVariable>
+        <CustomVariable>
+          <Properties>
+            <PropertySave>
+              <Name>Type</Name>
+              <ValueAsString>AnimationChainList</ValueAsString>
+            </PropertySave>
+          </Properties>
+          <Name>SpriteInstanceAnimationChains</Name>
+          <SourceObject>SpriteInstance</SourceObject>
+          <SourceObjectProperty>AnimationChains</SourceObjectProperty>
+        </CustomVariable>
+      </CustomVariables>
       <Properties>
         <PropertySave>
           <Name>ImplementsICollidable</Name>
           <ValueAsBool>true</ValueAsBool>
         </PropertySave>
       </Properties>
+      <NamedObjects>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>AnimationChainList</Type>
+            <Member>AnimationChains</Member>
+            <ValueAsString>AnimationChainListFile</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Blue</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>ColorOperation</Type>
+            <Member>ColorOperation</Member>
+            <ValueAsInt>3</ValueAsInt>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>string</Type>
+            <Member>CurrentChainName</Member>
+            <ValueAsString>Main</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Green</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Red</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.1</ValueAsFloat>
+          </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceName />
+          <SourceClassType>Sprite</SourceClassType>
+          <InstanceName>SpriteInstance</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <GenerateTimedEmit>true</GenerateTimedEmit>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Height</Member>
+            <ValueAsFloat>128</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>Visible</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Width</Member>
+            <ValueAsFloat>128</ValueAsFloat>
+          </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceName />
+          <SourceClassType>AxisAlignedRectangle</SourceClassType>
+          <InstanceName>AxisAlignedRectangleInstance</InstanceName>
+          <HasPublicProperty>true</HasPublicProperty>
+          <AttachToContainer>true</AttachToContainer>
+          <GenerateTimedEmit>true</GenerateTimedEmit>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+        <NamedObjectSave>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.4</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>AnimationChainList</Type>
+            <Member>AnimationChains</Member>
+            <ValueAsString>AnimationChainListFile</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>string</Type>
+            <Member>CurrentChainName</Member>
+            <ValueAsString>Shadow</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>-12</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-12</ValueAsFloat>
+          </CustomProperty>
+          <Properties>
+            <PropertySave>
+              <Name>SourceType</Name>
+              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
+            </PropertySave>
+          </Properties>
+          <SourceType>FlatRedBallType</SourceType>
+          <SourceFile />
+          <SourceName />
+          <SourceClassType>Sprite</SourceClassType>
+          <InstanceName>ShadowSprite</InstanceName>
+          <AttachToContainer>true</AttachToContainer>
+          <GenerateTimedEmit>true</GenerateTimedEmit>
+          <IndependentOfCamera>true</IndependentOfCamera>
+        </NamedObjectSave>
+      </NamedObjects>
       <StateCategoryList>
         <StateSaveCategory>
           <States>
@@ -730,218 +937,8 @@
           <SharesVariablesWithOtherCategories>false</SharesVariablesWithOtherCategories>
         </StateSaveCategory>
       </StateCategoryList>
-      <CustomVariables>
-        <CustomVariable>
-          <Properties>
-            <PropertySave>
-              <Name>Type</Name>
-              <ValueAsString>float</ValueAsString>
-            </PropertySave>
-          </Properties>
-          <Name>X</Name>
-          <Type>float</Type>
-        </CustomVariable>
-        <CustomVariable>
-          <Properties>
-            <PropertySave>
-              <Name>Type</Name>
-              <ValueAsString>float</ValueAsString>
-            </PropertySave>
-          </Properties>
-          <Name>Y</Name>
-          <Type>float</Type>
-        </CustomVariable>
-        <CustomVariable>
-          <Properties>
-            <PropertySave>
-              <Name>Type</Name>
-              <ValueAsString>float</ValueAsString>
-            </PropertySave>
-          </Properties>
-          <Name>Z</Name>
-          <Type>float</Type>
-        </CustomVariable>
-        <CustomVariable>
-          <Properties>
-            <PropertySave>
-              <Name>Type</Name>
-              <ValueAsString>int</ValueAsString>
-            </PropertySave>
-          </Properties>
-          <Name>Health</Name>
-          <Type>int</Type>
-          <DefaultValue xsi:type="xsd:int">3</DefaultValue>
-        </CustomVariable>
-        <CustomVariable>
-          <Properties>
-            <PropertySave>
-              <Name>Type</Name>
-              <ValueAsString>AnimationChainList</ValueAsString>
-            </PropertySave>
-          </Properties>
-          <Name>SpriteInstanceAnimationChains</Name>
-          <Type>AnimationChainList</Type>
-          <SourceObject>SpriteInstance</SourceObject>
-          <SourceObjectProperty>AnimationChains</SourceObjectProperty>
-        </CustomVariable>
-      </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\Obstacle</Name>
-      <NamedObjects>
-        <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>AnimationChainList</Type>
-            <Member>AnimationChains</Member>
-            <ValueAsString>AnimationChainListFile</ValueAsString>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>string</Type>
-            <Member>CurrentChainName</Member>
-            <ValueAsString>Main</ValueAsString>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>ColorOperation</Type>
-            <Member>ColorOperation</Member>
-            <ValueAsInt>3</ValueAsInt>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Red</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Green</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Blue</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <Properties>
-            <PropertySave>
-              <Name>SourceType</Name>
-              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
-            </PropertySave>
-          </Properties>
-          <SourceType>FlatRedBallType</SourceType>
-          <SourceFile />
-          <SourceName />
-          <SourceClassType>Sprite</SourceClassType>
-          <InstanceName>SpriteInstance</InstanceName>
-          <AttachToContainer>true</AttachToContainer>
-          <GenerateTimedEmit>true</GenerateTimedEmit>
-          <IndependentOfCamera>true</IndependentOfCamera>
-        </NamedObjectSave>
-        <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Width</Member>
-            <ValueAsFloat>128</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Height</Member>
-            <ValueAsFloat>128</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>Visible</Member>
-            <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <Properties>
-            <PropertySave>
-              <Name>SourceType</Name>
-              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
-            </PropertySave>
-          </Properties>
-          <SourceType>FlatRedBallType</SourceType>
-          <SourceFile />
-          <SourceName />
-          <SourceClassType>AxisAlignedRectangle</SourceClassType>
-          <InstanceName>AxisAlignedRectangleInstance</InstanceName>
-          <HasPublicProperty>true</HasPublicProperty>
-          <AttachToContainer>true</AttachToContainer>
-          <GenerateTimedEmit>true</GenerateTimedEmit>
-          <IndependentOfCamera>true</IndependentOfCamera>
-        </NamedObjectSave>
-        <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>-12</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-12</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>AnimationChainList</Type>
-            <Member>AnimationChains</Member>
-            <ValueAsString>AnimationChainListFile</ValueAsString>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>string</Type>
-            <Member>CurrentChainName</Member>
-            <ValueAsString>Shadow</ValueAsString>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Alpha</Member>
-            <ValueAsFloat>0.4</ValueAsFloat>
-          </CustomProperty>
-          <Properties>
-            <PropertySave>
-              <Name>SourceType</Name>
-              <ValueAsObject xsi:type="SourceType">FlatRedBallType</ValueAsObject>
-            </PropertySave>
-          </Properties>
-          <SourceType>FlatRedBallType</SourceType>
-          <SourceFile />
-          <SourceName />
-          <SourceClassType>Sprite</SourceClassType>
-          <InstanceName>ShadowSprite</InstanceName>
-          <AttachToContainer>true</AttachToContainer>
-          <GenerateTimedEmit>true</GenerateTimedEmit>
-          <IndependentOfCamera>true</IndependentOfCamera>
-        </NamedObjectSave>
-      </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/Obstacle/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-        <ReferencedFileSave>
-          <Name>Entities/Obstacle/BonusAnimationChains.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <CreatedByOtherEntities>true</CreatedByOtherEntities>
       <Is2D>true</Is2D>
     </EntitySave>
@@ -950,6 +947,8 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -959,7 +958,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -969,7 +967,6 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">0</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -980,7 +977,6 @@
             </PropertySave>
           </Properties>
           <Name>YDistanceBetweenSpawns</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">100</DefaultValue>
           <DefinedByBase>true</DefinedByBase>
         </CustomVariable>
@@ -992,7 +988,6 @@
             </PropertySave>
           </Properties>
           <Name>PathWidth</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">130</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1003,7 +998,6 @@
             </PropertySave>
           </Properties>
           <Name>NumberOfTimesToRepositionCrates</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">1</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1014,7 +1008,6 @@
             </PropertySave>
           </Properties>
           <Name>SpawnRateMultipleVelocity</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">0.1</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1025,13 +1018,9 @@
             </PropertySave>
           </Properties>
           <Name>RatioOfGold</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">0.04</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <BaseEntity>Entities\SpawnerBase</BaseEntity>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\ObstacleSpawner</Name>
       <NamedObjects>
         <NamedObjectSave>
           <CustomProperty>
@@ -1056,6 +1045,9 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
+      <Name>Entities\ObstacleSpawner</Name>
+      <BaseEntity>Entities\SpawnerBase</BaseEntity>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -1063,6 +1055,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/Particles/CrateDestructionParticles/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1072,7 +1074,6 @@
             </PropertySave>
           </Properties>
           <Name>NumberOfSprites</Name>
-          <Type>int</Type>
           <DefaultValue xsi:type="xsd:int">35</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1083,12 +1084,9 @@
             </PropertySave>
           </Properties>
           <Name>MaxRotationPerSecondDegrees</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">45</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\Particles\CrateDestructionParticles</Name>
       <NamedObjects>
         <NamedObjectSave>
           <Properties>
@@ -1123,14 +1121,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/Particles/CrateDestructionParticles/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\Particles\CrateDestructionParticles</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -1138,6 +1130,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/Particles/MissileDestructionParticles/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1147,7 +1149,6 @@
             </PropertySave>
           </Properties>
           <Name>NumberOfSprites</Name>
-          <Type>int</Type>
           <DefaultValue xsi:type="xsd:int">10</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1158,7 +1159,6 @@
             </PropertySave>
           </Properties>
           <Name>EmissionRadius</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">30</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1169,7 +1169,6 @@
             </PropertySave>
           </Properties>
           <Name>MaxRotationPerSecondDegrees</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">45</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1180,7 +1179,6 @@
             </PropertySave>
           </Properties>
           <Name>TimeLasting</Name>
-          <Type>double</Type>
           <DefaultValue xsi:type="xsd:double">3.5</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1191,12 +1189,9 @@
             </PropertySave>
           </Properties>
           <Name>MaxSubtleMovementSpeed</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">10</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\Particles\MissileDestructionParticles</Name>
       <NamedObjects>
         <NamedObjectSave>
           <Properties>
@@ -1216,14 +1211,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/Particles/MissileDestructionParticles/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\Particles\MissileDestructionParticles</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -1231,6 +1220,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/MissileEmitter/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1240,7 +1239,6 @@
             </PropertySave>
           </Properties>
           <Name>ParticlesPerSecond</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">4</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1251,7 +1249,6 @@
             </PropertySave>
           </Properties>
           <Name>ParticleDuration</Name>
-          <Type>double</Type>
           <DefaultValue xsi:type="xsd:double">3</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1262,7 +1259,6 @@
             </PropertySave>
           </Properties>
           <Name>MaxVelocity</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">17</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1273,12 +1269,9 @@
             </PropertySave>
           </Properties>
           <Name>PositionSpread</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">10</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\Particles\MissileEmitter</Name>
       <NamedObjects>
         <NamedObjectSave>
           <Properties>
@@ -1298,14 +1291,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/MissileEmitter/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\Particles\MissileEmitter</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -1313,12 +1300,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
-      <Properties>
-        <PropertySave>
-          <Name>ImplementsICollidable</Name>
-          <ValueAsBool>true</ValueAsBool>
-        </PropertySave>
-      </Properties>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/PlayerBuggy/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1328,7 +1319,6 @@
             </PropertySave>
           </Properties>
           <Name>BulletSpeed</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">1500</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1339,7 +1329,6 @@
             </PropertySave>
           </Properties>
           <Name>MaxSpeed</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">475</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1350,7 +1339,6 @@
             </PropertySave>
           </Properties>
           <Name>RotationSpeed</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">110</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1361,7 +1349,6 @@
             </PropertySave>
           </Properties>
           <Name>TimeToSpeedUp</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">1.5</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1372,7 +1359,6 @@
             </PropertySave>
           </Properties>
           <Name>TurnRatio</Name>
-          <Type>float</Type>
           <CreatesEvent>true</CreatesEvent>
         </CustomVariable>
         <CustomVariable>
@@ -1383,7 +1369,6 @@
             </PropertySave>
           </Properties>
           <Name>MaxTireTurnDegrees</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">30</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1394,7 +1379,6 @@
             </PropertySave>
           </Properties>
           <Name>RotationZ</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">0</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1405,7 +1389,6 @@
             </PropertySave>
           </Properties>
           <Name>TimeToSlowDown</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">1</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1416,24 +1399,17 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">0</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\PlayerBuggy</Name>
+      <Properties>
+        <PropertySave>
+          <Name>ImplementsICollidable</Name>
+          <ValueAsBool>true</ValueAsBool>
+        </PropertySave>
+      </Properties>
       <NamedObjects>
         <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.5</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -1443,6 +1419,16 @@
             <Type>string</Type>
             <Member>CurrentChainName</Member>
             <ValueAsString>TruckAnimation</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.5</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -1460,11 +1446,6 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
         <NamedObjectSave>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>Visible</Member>
-            <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
           <CustomProperty>
             <Member>Points</Member>
             <ValueAsListOfVector2>
@@ -1490,6 +1471,11 @@
               </Vector2>
             </ValueAsListOfVector2>
           </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>Visible</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
           <Properties>
             <PropertySave>
               <Name>SourceType</Name>
@@ -1509,6 +1495,11 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
+            <Member>RotationZ</Member>
+            <ValueAsFloat>0</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
             <Member>X</Member>
             <ValueAsFloat>10</ValueAsFloat>
           </CustomProperty>
@@ -1521,11 +1512,6 @@
             <Type>float</Type>
             <Member>Z</Member>
             <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>RotationZ</Member>
-            <ValueAsFloat>0</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -1566,6 +1552,11 @@
         </NamedObjectSave>
         <NamedObjectSave>
           <CustomProperty>
+            <Type>bool</Type>
+            <Member>FlipVertical</Member>
+            <ValueAsBool>true</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
             <Type>float</Type>
             <Member>X</Member>
             <ValueAsFloat>30</ValueAsFloat>
@@ -1574,11 +1565,6 @@
             <Type>float</Type>
             <Member>Y</Member>
             <ValueAsFloat>-30</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>FlipVertical</Member>
-            <ValueAsBool>true</ValueAsBool>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -1619,6 +1605,11 @@
         </NamedObjectSave>
         <NamedObjectSave>
           <CustomProperty>
+            <Type>bool</Type>
+            <Member>FlipVertical</Member>
+            <ValueAsBool>true</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
             <Type>float</Type>
             <Member>X</Member>
             <ValueAsFloat>-34</ValueAsFloat>
@@ -1627,11 +1618,6 @@
             <Type>float</Type>
             <Member>Y</Member>
             <ValueAsFloat>-30</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>FlipVertical</Member>
-            <ValueAsBool>true</ValueAsBool>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -1649,23 +1635,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>-12</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-12</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.4</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
@@ -1678,14 +1649,29 @@
             <ValueAsString>TruckShadow</ValueAsString>
           </CustomProperty>
           <CustomProperty>
-            <Type>float</Type>
-            <Member>Alpha</Member>
-            <ValueAsFloat>0.4</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
             <Type>bool</Type>
             <Member>ParentRotationChangesPosition</Member>
             <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>-12</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-12</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -1703,14 +1689,7 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/PlayerBuggy/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\PlayerBuggy</Name>
       <Events>
         <EventResponseSave>
           <EventName>AfterTurnRatioSet</EventName>
@@ -1718,6 +1697,7 @@
           <BeforeOrAfter>After</BeforeOrAfter>
         </EventResponseSave>
       </Events>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -1725,12 +1705,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
-      <Properties>
-        <PropertySave>
-          <Name>ImplementsICollidable</Name>
-          <ValueAsBool>true</ValueAsBool>
-        </PropertySave>
-      </Properties>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/PlayerBullet/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1740,7 +1724,6 @@
             </PropertySave>
           </Properties>
           <Name>X</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -1750,7 +1733,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -1760,28 +1742,16 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\PlayerBullet</Name>
+      <Properties>
+        <PropertySave>
+          <Name>ImplementsICollidable</Name>
+          <ValueAsBool>true</ValueAsBool>
+        </PropertySave>
+      </Properties>
       <NamedObjects>
         <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Width</Member>
-            <ValueAsFloat>4</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Height</Member>
-            <ValueAsFloat>8</ValueAsFloat>
-          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -1791,6 +1761,21 @@
             <Type>string</Type>
             <Member>CurrentChainName</Member>
             <ValueAsString>Main</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Height</Member>
+            <ValueAsFloat>8</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Width</Member>
+            <ValueAsFloat>4</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -1849,14 +1834,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/PlayerBullet/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\PlayerBullet</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <CreatedByOtherEntities>true</CreatedByOtherEntities>
       <Is2D>true</Is2D>
     </EntitySave>
@@ -1865,12 +1844,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
-      <Properties>
-        <PropertySave>
-          <Name>ImplementsICollidable</Name>
-          <ValueAsBool>true</ValueAsBool>
-        </PropertySave>
-      </Properties>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/SandStorm/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -1880,7 +1863,6 @@
             </PropertySave>
           </Properties>
           <Name>X</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -1890,7 +1872,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -1900,7 +1881,6 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -1910,7 +1890,6 @@
             </PropertySave>
           </Properties>
           <Name>MovingSpeed</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">425</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -1921,23 +1900,21 @@
             </PropertySave>
           </Properties>
           <Name>MaxDistanceBehindScreen</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">1000</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\SandStorm</Name>
+      <Properties>
+        <PropertySave>
+          <Name>ImplementsICollidable</Name>
+          <ValueAsBool>true</ValueAsBool>
+        </PropertySave>
+      </Properties>
       <NamedObjects>
         <NamedObjectSave>
           <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>32</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Width</Member>
-            <ValueAsFloat>1920</ValueAsFloat>
+            <Type>Color</Type>
+            <Member>Color</Member>
+            <ValueAsString>Red</ValueAsString>
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
@@ -1950,9 +1927,14 @@
             <ValueAsBool>false</ValueAsBool>
           </CustomProperty>
           <CustomProperty>
-            <Type>Color</Type>
-            <Member>Color</Member>
-            <ValueAsString>Red</ValueAsString>
+            <Type>float</Type>
+            <Member>Width</Member>
+            <ValueAsFloat>1920</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>32</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -1972,31 +1954,6 @@
         </NamedObjectSave>
         <NamedObjectSave>
           <CustomProperty>
-            <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>0</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-400</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Width</Member>
-            <ValueAsFloat>2300</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Height</Member>
-            <ValueAsFloat>800</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
-          <CustomProperty>
             <Type>bool</Type>
             <Member>Animate</Member>
             <ValueAsBool>true</ValueAsBool>
@@ -2010,6 +1967,31 @@
             <Type>string</Type>
             <Member>CurrentChainName</Member>
             <ValueAsString>SandstormMask</ValueAsString>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Height</Member>
+            <ValueAsFloat>800</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Width</Member>
+            <ValueAsFloat>2300</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>0</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-400</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2217,14 +2199,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/SandStorm/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\SandStorm</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -2232,6 +2208,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/SandStormEffect/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -2241,7 +2227,6 @@
             </PropertySave>
           </Properties>
           <Name>X</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2251,7 +2236,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2261,7 +2245,6 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2271,7 +2254,6 @@
             </PropertySave>
           </Properties>
           <Name>RotationVelocityMin</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">2</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -2282,28 +2264,15 @@
             </PropertySave>
           </Properties>
           <Name>RotationVelocityMax</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">8</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\SandStormEffect</Name>
       <NamedObjects>
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.5</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1.5</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.7</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>bool</Type>
@@ -2322,8 +2291,18 @@
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Alpha</Member>
-            <ValueAsFloat>0.7</ValueAsFloat>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1.5</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.5</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2343,18 +2322,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.4</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.7</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>bool</Type>
@@ -2373,13 +2342,23 @@
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Alpha</Member>
-            <ValueAsFloat>0.7</ValueAsFloat>
+            <Member>RotationZ</Member>
+            <ValueAsFloat>0.5</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>RotationZ</Member>
-            <ValueAsFloat>0.5</ValueAsFloat>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.4</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2399,18 +2378,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.3</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>2</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.7</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>bool</Type>
@@ -2429,13 +2398,23 @@
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Alpha</Member>
-            <ValueAsFloat>0.7</ValueAsFloat>
+            <Member>RotationZ</Member>
+            <ValueAsFloat>0</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>RotationZ</Member>
-            <ValueAsFloat>0</ValueAsFloat>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>2</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.3</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2455,18 +2434,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.2</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1.5</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.7</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>bool</Type>
@@ -2485,13 +2454,23 @@
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Alpha</Member>
+            <Member>RotationZ</Member>
             <ValueAsFloat>0.7</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>RotationZ</Member>
-            <ValueAsFloat>0.7</ValueAsFloat>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1.5</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.2</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2511,18 +2490,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>2</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.9</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>bool</Type>
@@ -2541,8 +2510,18 @@
           </CustomProperty>
           <CustomProperty>
             <Type>float</Type>
-            <Member>Alpha</Member>
-            <ValueAsFloat>0.9</ValueAsFloat>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>2</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.1</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2560,14 +2539,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/SandStormEffect/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\SandStormEffect</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -2575,6 +2548,8 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -2584,7 +2559,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2594,13 +2568,12 @@
             </PropertySave>
           </Properties>
           <Name>YDistanceBetweenSpawns</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">15</DefaultValue>
           <SetByDerived>true</SetByDerived>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Name>Entities\SpawnerBase</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
     <EntitySave>
@@ -2608,6 +2581,16 @@
         <string>GLUE</string>
       </Tags>
       <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
+      <ReferencedFiles>
+        <ReferencedFileSave>
+          <Name>Entities/PlayerBuggy/AnimationChainListFile.achx</Name>
+          <IsSharedStatic>true</IsSharedStatic>
+          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
+          <ProjectsToExcludeFrom />
+        </ReferencedFileSave>
+      </ReferencedFiles>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -2617,7 +2600,6 @@
             </PropertySave>
           </Properties>
           <Name>X</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2627,7 +2609,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2637,7 +2618,6 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2647,7 +2627,6 @@
             </PropertySave>
           </Properties>
           <Name>FlipVertical</Name>
-          <Type>bool</Type>
           <DefaultValue xsi:type="xsd:boolean">false</DefaultValue>
           <SourceObject>SpriteInstance</SourceObject>
           <SourceObjectProperty>FlipVertical</SourceObjectProperty>
@@ -2660,21 +2639,13 @@
             </PropertySave>
           </Properties>
           <Name>AnimationSpeed</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">1</DefaultValue>
           <SourceObject>SpriteInstance</SourceObject>
           <SourceObjectProperty>AnimationSpeed</SourceObjectProperty>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\Tire</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -2689,6 +2660,11 @@
             <Type>bool</Type>
             <Member>IgnoreAnimationChainTextureFlip</Member>
             <ValueAsBool>true</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2736,6 +2712,16 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
+      <Name>Entities\Tire</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
+      <Is2D>true</Is2D>
+    </EntitySave>
+    <EntitySave>
+      <Tags>
+        <string>GLUE</string>
+      </Tags>
+      <Source>GLUE</Source>
+      <UseGlobalContent>false</UseGlobalContent>
       <ReferencedFiles>
         <ReferencedFileSave>
           <Name>Entities/PlayerBuggy/AnimationChainListFile.achx</Name>
@@ -2744,13 +2730,7 @@
           <ProjectsToExcludeFrom />
         </ReferencedFileSave>
       </ReferencedFiles>
-      <Is2D>true</Is2D>
-    </EntitySave>
-    <EntitySave>
-      <Tags>
-        <string>GLUE</string>
-      </Tags>
-      <Source>GLUE</Source>
+      <IsHiddenInTreeView>false</IsHiddenInTreeView>
       <CustomVariables>
         <CustomVariable>
           <Properties>
@@ -2760,7 +2740,6 @@
             </PropertySave>
           </Properties>
           <Name>X</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2770,7 +2749,6 @@
             </PropertySave>
           </Properties>
           <Name>Y</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2780,7 +2758,6 @@
             </PropertySave>
           </Properties>
           <Name>Z</Name>
-          <Type>float</Type>
         </CustomVariable>
         <CustomVariable>
           <Properties>
@@ -2790,7 +2767,6 @@
             </PropertySave>
           </Properties>
           <Name>RotationZ</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">0</DefaultValue>
         </CustomVariable>
         <CustomVariable>
@@ -2801,7 +2777,6 @@
             </PropertySave>
           </Properties>
           <Name>BulletOffset</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">40</DefaultValue>
           <IsShared>true</IsShared>
         </CustomVariable>
@@ -2813,34 +2788,11 @@
             </PropertySave>
           </Properties>
           <Name>BulletsPerSecond</Name>
-          <Type>float</Type>
           <DefaultValue xsi:type="xsd:float">7</DefaultValue>
         </CustomVariable>
       </CustomVariables>
-      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
-      <Name>Entities\Turret</Name>
       <NamedObjects>
         <NamedObjectSave>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>13</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>0.1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
-          </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
             <Member>AnimationChains</Member>
@@ -2855,6 +2807,26 @@
             <Type>float</Type>
             <Member>RotationZ</Member>
             <ValueAsFloat>0</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>13</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>0.1</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2874,28 +2846,8 @@
         <NamedObjectSave>
           <CustomProperty>
             <Type>float</Type>
-            <Member>X</Member>
-            <ValueAsFloat>-8</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Y</Member>
-            <ValueAsFloat>-8</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>Z</Member>
-            <ValueAsFloat>-0.1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>float</Type>
-            <Member>TextureScale</Member>
-            <ValueAsFloat>1</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
-            <Type>bool</Type>
-            <Member>UseAnimationRelativePosition</Member>
-            <ValueAsBool>false</ValueAsBool>
+            <Member>Alpha</Member>
+            <ValueAsFloat>0.8</ValueAsFloat>
           </CustomProperty>
           <CustomProperty>
             <Type>AnimationChainList</Type>
@@ -2908,14 +2860,34 @@
             <ValueAsString>TurretShadow</ValueAsString>
           </CustomProperty>
           <CustomProperty>
-            <Type>float</Type>
-            <Member>Alpha</Member>
-            <ValueAsFloat>0.8</ValueAsFloat>
-          </CustomProperty>
-          <CustomProperty>
             <Type>bool</Type>
             <Member>ParentRotationChangesPosition</Member>
             <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>TextureScale</Member>
+            <ValueAsFloat>1</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>bool</Type>
+            <Member>UseAnimationRelativePosition</Member>
+            <ValueAsBool>false</ValueAsBool>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>X</Member>
+            <ValueAsFloat>-8</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Y</Member>
+            <ValueAsFloat>-8</ValueAsFloat>
+          </CustomProperty>
+          <CustomProperty>
+            <Type>float</Type>
+            <Member>Z</Member>
+            <ValueAsFloat>-0.1</ValueAsFloat>
           </CustomProperty>
           <Properties>
             <PropertySave>
@@ -2933,14 +2905,8 @@
           <IndependentOfCamera>true</IndependentOfCamera>
         </NamedObjectSave>
       </NamedObjects>
-      <ReferencedFiles>
-        <ReferencedFileSave>
-          <Name>Entities/PlayerBuggy/AnimationChainListFile.achx</Name>
-          <IsSharedStatic>true</IsSharedStatic>
-          <RuntimeType>FlatRedBall.Graphics.Animation.AnimationChainList</RuntimeType>
-          <ProjectsToExcludeFrom />
-        </ReferencedFileSave>
-      </ReferencedFiles>
+      <Name>Entities\Turret</Name>
+      <ImplementsIDrawableBatch>false</ImplementsIDrawableBatch>
       <Is2D>true</Is2D>
     </EntitySave>
   </Entities>
@@ -3016,7 +2982,6 @@
       <GenerateCode>true</GenerateCode>
     </CustomClassSave>
   </CustomClasses>
-  <TranslatedFiles />
   <ApplyToFixedResolutionPlatforms>false</ApplyToFixedResolutionPlatforms>
   <ExternallyBuiltFileDirectory>../../</ExternallyBuiltFileDirectory>
   <FileVersion>0</FileVersion>
@@ -3030,6 +2995,7 @@
     </RequiredPlugins>
   </PluginData>
   <DisplaySettings>
+    <Name>Custom</Name>
     <Is2D>true</Is2D>
     <GenerateDisplayCode>true</GenerateDisplayCode>
     <ResolutionWidth>1920</ResolutionWidth>
@@ -3046,5 +3012,7 @@
     <ResizeBehavior>StretchVisibleArea</ResizeBehavior>
     <ResizeBehaviorGum>StretchVisibleArea</ResizeBehaviorGum>
     <DominantInternalCoordinates>Height</DominantInternalCoordinates>
+    <TextureFilter>0</TextureFilter>
   </DisplaySettings>
+  <AllDisplaySettings />
 </GlueProjectSave>

@@ -2,54 +2,66 @@
 <GumProjectSave xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CustomProperties />
   <Version>1</Version>
-  <DefaultCanvasWidth>1600</DefaultCanvasWidth>
-  <DefaultCanvasHeight>900</DefaultCanvasHeight>
+  <DefaultCanvasWidth>1920</DefaultCanvasWidth>
+  <DefaultCanvasHeight>1080</DefaultCanvasHeight>
   <ShowOutlines>true</ShowOutlines>
+  <ConvertVariablesOnUnitTypeChange>false</ConvertVariablesOnUnitTypeChange>
   <RestrictToUnitValues>true</RestrictToUnitValues>
   <RestrictFileNamesForAndroid>false</RestrictFileNamesForAndroid>
   <Guides />
   <ScreenReference>
     <Name>GameScreenGum</Name>
     <ElementType>Screen</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </ScreenReference>
   <ScreenReference>
     <Name>MainMenuGum</Name>
     <ElementType>Screen</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </ScreenReference>
   <ComponentReference>
     <Name>DeathComponent</Name>
     <ElementType>Component</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </ComponentReference>
   <StandardElementReference>
     <Name>Circle</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
   <StandardElementReference>
     <Name>ColoredRectangle</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
   <StandardElementReference>
     <Name>Component</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
   <StandardElementReference>
     <Name>Container</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
   <StandardElementReference>
     <Name>NineSlice</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
   <StandardElementReference>
     <Name>Rectangle</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
   <StandardElementReference>
     <Name>Sprite</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
   <StandardElementReference>
     <Name>Text</Name>
     <ElementType>Standard</ElementType>
+    <LinkType>ReferenceOriginal</LinkType>
   </StandardElementReference>
 </GumProjectSave>

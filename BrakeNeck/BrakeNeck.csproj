@@ -13,7 +13,7 @@
     <AssemblyName>BrakeNeck</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MonoGamePlatform>DesktopGL</MonoGamePlatform>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -355,6 +355,14 @@
     <Compile Include="Factories\ObstacleFactory.Generated.cs" />
     <Compile Include="Factories\PlayerBulletFactory.Generated.cs" />
     <Compile Include="FileAliases.Generated.cs" />
+    <Compile Include="Forms\Screens\GameScreenGumForms.cs" />
+    <Compile Include="Forms\Screens\GameScreenGumForms.Generated.cs">
+      <DependentUpon>GameScreenGumForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Screens\MainMenuGumForms.cs" />
+    <Compile Include="Forms\Screens\MainMenuGumForms.Generated.cs">
+      <DependentUpon>MainMenuGumForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalContent.Generated.cs" />
     <Compile Include="GlueControl\GlueControlManager.Generated.cs" />
     <Compile Include="GumRuntimes\CircleRuntime.Generated.cs" />
